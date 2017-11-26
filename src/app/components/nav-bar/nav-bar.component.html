@@ -1,19 +1,20 @@
 <div>
-  <mat-toolbar color="primary">
-    <span>BOOKSTORE ADMIN PORTAL</span>
-    <span class="done" [hidden]="!loggedIn">
-      <button mat-fab>
-        <mat-icon>View Book List</mat-icon>
+  <mat-toolbar class="mat-primary">
+  <h3 [style.color]="'white'">ADMIN PORTAL</h3>
+  <span class="example-spacer"></span>
+    <span  [hidden]="!loggedIn">
+      <button mat-button>
+        View Book List
       </button>
     </span>
-    <span class="done" [hidden]="!loggedIn">
-      <button mat-fab>
-        <mat-icon>Add a Book</mat-icon>
+    <span  [hidden]="!loggedIn">
+      <button mat-button>
+        Add a Book
       </button>
     </span>
-    <span class="done" [hidden]="!loggedIn">
-      <button mat-fab (click)="logout()">
-        <mat-icon>Logout</mat-icon>
+    <span [hidden]="!loggedIn">
+      <button  mat-button (click)="logout()">
+        Logout
       </button>
     </span>
   </mat-toolbar>

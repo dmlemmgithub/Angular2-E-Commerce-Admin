@@ -1,0 +1,22 @@
+<div>
+  <mat-toolbar color="primary">
+    <span>BOOKSTORE ADMIN PORTAL</span>
+    <span class="done" [hidden]="!loggedIn">
+      <button mat-fab>
+        <mat-icon>View Book List</mat-icon>
+      </button>
+    </span>
+    <span class="done" [hidden]="!loggedIn">
+      <button mat-fab>
+        <mat-icon>Add a Book</mat-icon>
+      </button>
+    </span>
+    <span class="done" [hidden]="!loggedIn">
+      <button mat-fab (click)="logout()">
+        <mat-icon>Logout</mat-icon>
+      </button>
+    </span>
+  </mat-toolbar>
+
+
+</div>

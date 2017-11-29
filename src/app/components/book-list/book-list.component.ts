@@ -18,7 +18,12 @@ export class BookListComponent implements OnInit {
 	private removeBookList: Book[] = new Array();
 
   constructor(private getBookListService: GetBookListService,
-  		private router:Router) { }
+  		        private router:Router) { }
+
+  onSelect(book: Book){
+    this.selectedBook = book;
+    this.router.navigate(['/viewBook', this.selectedBook.id]);
+  }
 
   ngOnInit() {
     this.getBookListService.getBookList().subscribe(

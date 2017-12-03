@@ -15,10 +15,12 @@ import { AddBookService } from './services/add-book.service';
 import { UploadImageService } from './services/upload-image.service';
 import { GetBookListService } from './services/get-book-list.service';
 import { GetBookService } from './services/get-book.service';
+import { EditBookService } from './services/edit-book.service';
 
 import { routing } from './app.routing';
 import { BookListComponent } from './components/book-list/book-list.component';
 import { ViewBookComponent } from './components/view-book/view-book.component';
+import { EditBookComponent } from './components/edit-book/edit-book.component';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { ViewBookComponent } from './components/view-book/view-book.component';
     NavBarComponent,
     AddNewBookComponent,
     BookListComponent,
-    ViewBookComponent
+    ViewBookComponent,
+    EditBookComponent
 
   ],
   imports: [
@@ -44,7 +47,8 @@ import { ViewBookComponent } from './components/view-book/view-book.component';
     AddBookService,
     UploadImageService,
     GetBookListService,
-    GetBookService
+    GetBookService,
+    EditBookService
   ],
   bootstrap: [AppComponent]
 })

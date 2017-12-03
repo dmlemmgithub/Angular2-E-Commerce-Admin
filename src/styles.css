@@ -1,5 +1,6 @@
 @import '~https://fonts.googleapis.com/icon?family=Material+Icons';
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 
 .box {
@@ -56,4 +57,12 @@ mat-slide-toggle {
 
 .example-full-width {
   width: 100%;
+
+}
+.card-login{
+	  margin-top: 60px;
+		width: 40%;
+	  margin-left:30%;
+		margin-right:30%;
+		height: 160px;
 }

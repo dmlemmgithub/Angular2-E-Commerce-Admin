@@ -16,9 +16,10 @@ import { UploadImageService } from './services/upload-image.service';
 import { GetBookListService } from './services/get-book-list.service';
 import { GetBookService } from './services/get-book.service';
 import { EditBookService } from './services/edit-book.service';
+import { RemoveBookService } from './services/remove-book.service';
 
 import { routing } from './app.routing';
-import { BookListComponent } from './components/book-list/book-list.component';
+import { BookListComponent, DialogResultExampleDialog } from './components/book-list/book-list.component';
 import { ViewBookComponent } from './components/view-book/view-book.component';
 import { EditBookComponent } from './components/edit-book/edit-book.component';
 
@@ -31,7 +32,8 @@ import { EditBookComponent } from './components/edit-book/edit-book.component';
     AddNewBookComponent,
     BookListComponent,
     ViewBookComponent,
-    EditBookComponent
+    EditBookComponent,
+    DialogResultExampleDialog
 
   ],
   imports: [
@@ -49,7 +51,8 @@ import { EditBookComponent } from './components/edit-book/edit-book.component';
     GetBookListService,
     GetBookService,
     EditBookService
+    RemoveBookService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, DialogResultExampleDialog]
 })
 export class AppModule { }

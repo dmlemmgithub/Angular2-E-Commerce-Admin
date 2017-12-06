@@ -50,7 +50,7 @@ import { EditBookComponent } from './components/edit-book/edit-book.component';
     UploadImageService,
     GetBookListService,
     GetBookService,
-    EditBookService
+    EditBookService,
     RemoveBookService
   ],
   bootstrap: [AppComponent, DialogResultExampleDialog]
